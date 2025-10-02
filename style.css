@@ -1,0 +1,148 @@
+.extra{
+    text-decoration: line-through;  /* complete button  */
+    color:#333;
+    
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+body {
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.container {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 25px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.Add-todo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #66a6ff;
+}
+
+.submit-btn {
+  background-color: #66a6ff;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #3f7ae0;
+}
+
+.clear-btn {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  margin-left: 16rem;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.clear-btn:hover {
+  background-color: #e04848;
+}
+
+
+
+.all-tasks h3 {
+  border-bottom: 2px solid #66a6ff;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+
+
+li {
+  background-color: #f1f9ff; 
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #e0f0ff;
+}
+
+
+/*  buttons style */
+.btn {
+  border: none;
+  color: white;
+  padding: 4px 8px;       
+  margin-left: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;       
+  transition: background-color 0.3s ease;
+}
+
+/* Delete*/
+.btn-delete {
+  background-color: #e74c3c;
+}
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+/* Complete */
+.btn-complete {
+  background-color: #2ecc71;
+}
+.btn-complete:hover {
+  background-color: #27ae60;
+}
+
+
