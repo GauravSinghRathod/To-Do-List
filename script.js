@@ -31,9 +31,38 @@ function Addtask() {
       li.remove();
     });
 
+    // Edit button
+let editBtn = document.createElement("button");
+editBtn.textContent = "✏️";
+editBtn.classList.add("btn", "btn-edit");
+
+editBtn.onclick = function () {
+
+  let editInput = document.createElement("input");
+  editInput.value = taskText.textContent;
+  editInput.classList.add("input");
+
+  li.replaceChild(editInput, taskText);
+
+  let updateBtn = document.createElement("button");
+  updateBtn.textContent = "💾";
+  updateBtn.classList.add("btn", "btn-update");
+
+  updateBtn.onclick = function () {
+    taskText.textContent = editInput.value;
+    li.replaceChild(taskText, editInput);
+    updateBtn.remove();
+  };
+
+  buttonContainer.appendChild(updateBtn);
+};
+
+
+
    
     buttonContainer.appendChild(completeBtn);
     buttonContainer.appendChild(deleteBtn);
+    buttonContainer.appendChild(editBtn); 
 
     // Add task text and button container to the task item
     li.appendChild(taskText);
